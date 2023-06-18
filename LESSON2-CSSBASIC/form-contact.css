@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+background-color:cadetblue;
+color: chocolate;
+
+}
+.circle{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 20px;
+       
+}
+.circle img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.formbody{
+    background-color: rgb(107, 200, 203);
+}
+.textwrapper{
+    color: rgb(228, 171, 102);
+    font-size: 20px;
+}

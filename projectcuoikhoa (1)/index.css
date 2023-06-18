@@ -1,0 +1,821 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* max-width: 1460px;
+  margin: 0 auto; */
+  font-family: "Inter", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  /* background: rgb(89, 89, 168); */
+  background: #f4f4f4;
+  scroll-behavior: smooth;
+}
+section {
+  width: auto;
+}
+header {
+  display: flex;
+  align-items: center;
+  width: auto;
+  justify-content: space-evenly;
+  background-color: rgb(105, 105, 216);
+}
+/* .logo {
+  position: relative;
+  display: inline-block;
+} */
+.menu {
+  display: none;
+}
+.logo-img {
+  display: inline-block;
+  position: relative;
+}
+.logo img {
+  width: 100px;
+  /* margin-right: 200px; */
+}
+#mobile-nav {
+  /* display: none; */
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.navlist {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.navlist-1 {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  display: none;
+}
+.navlist-1 .navitem a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Noto Sans", sans-serif;
+  scroll-behavior: smooth;
+  transition: all 0.3s ease;
+}
+.navlist .navitem a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Noto Sans", sans-serif;
+}
+.navlist .navitem a:hover {
+  color: rgb(189, 141, 53);
+}
+.promo {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 10px 10px;
+  font-weight: 500;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(167, 45, 45);
+  /* margin-right: 100px; */
+}
+.promo:hover {
+  background-color: rgb(29, 29, 107);
+}
+.cart {
+  display: inline-block;
+  position: relative;
+  transition: all 5000s ease-in-out;
+}
+.cart-drop-down {
+  padding: 20px;
+  background: #f4f4f4;
+  display: none;
+  position: absolute;
+  right: 50%;
+  transform: translateX(25%);
+  z-index: 1;
+  width: 400px;
+}
+.cart:hover .cart-drop-down {
+  display: block;
+}
+.cart-content-container {
+  display: flex;
+  padding-left: 5px;
+}
+
+.cart-title {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.cart-brand {
+  font-size: 10px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.cart-name {
+  font-size: 10px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.cart-price {
+  font-size: 11px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  color: #f00;
+}
+.cart-quantity-input {
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+.btn-remove {
+  font-size: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background: rgb(230, 43, 43);
+  padding: 5px;
+  text-align: center;
+  width: max-content;
+  color: #f4f4f4;
+  font-weight: 600;
+  cursor: pointer;
+}
+.total {
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.purchase {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgb(105, 105, 216);
+  border-radius: 20px;
+  color: rgb(105, 105, 216);
+  font-weight: 600;
+  text-align: center;
+  padding: 5px;
+}
+.purchase:hover {
+  background: rgb(105, 105, 216);
+  color: #f4f4f4;
+}
+/* .cart-img{
+  width: 150px ;
+  height: auto;
+  overflow: hidden;
+} */
+.cart-img img {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+}
+.cart ion-icon {
+  width: 35px;
+  height: 35px;
+  border: 1px solid transparent;
+  color: rgba(255, 255, 255, 0.8);
+}
+.cart ion-icon:hover {
+  color: rgb(29, 29, 107);
+}
+.policy {
+  /* max-width: 1460px; */
+  margin: 0 auto;
+  background: rgb(236, 236, 126);
+  padding: 0px auto;
+  text-align: center;
+  border: 1px solid transparent;
+}
+.policylist {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+.policylist .policyitem a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Noto Sans", sans-serif;
+  color: rgb(7, 124, 27);
+  text-align: center;
+}
+/* .policyitem.payment img {
+    width: 25px;
+    height: 25px;
+    align-items: center;
+  } */
+#sale-cloth {
+  /* max-width: 1460px; */
+  margin: 0 auto;
+}
+.sale-header h2 {
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+  margin: 30px 0;
+  position: relative;
+  animation: glow 1.5s infinite;
+}
+@keyframes glow {
+  0% {
+    color: black;
+  }
+  50% {
+    color: rgb(189, 141, 53);
+  }
+  100% {
+    color: black;
+  }
+}
+
+.sale-cloth-list {
+  position: relative;
+  background-color: white;
+  transition: all 5000ms ease-in-out;
+}
+/* .sale-cloth-list {
+  position: relative;
+} */
+.product-img img {
+  width: 100%;
+}
+.back-img {
+  position: absolute;
+  top: 0px;
+  display: none;
+  /* transition: all 5000ms ease-in-out; */
+}
+.product-img:hover .back-img {
+  display: block;
+  width: 100%;
+}
+
+/* .sale-banner {
+  width: 100%;
+  height: 30px;
+  border: 1px solid white;
+  background: rgb(11, 24, 138);
+  position: absolute;
+  bottom: 0px;
+} */
+
+.sale-part1 {
+  position: absolute;
+  width: 100%;
+  height: 13%;
+  background-color: darkblue;
+  background-image: linear-gradient(
+    to right,
+    rgb(105, 105, 216),
+    rgb(241, 241, 136)
+  );
+  color: rgb(207, 38, 103);
+  bottom: 0px;
+  left: 0px;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+.sale-part1 div {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.percent {
+  width: 50px;
+  height: 30px;
+  background-color: rgb(209, 10, 10);
+  position: absolute;
+  right: -2px;
+  top: -2px;
+}
+.percent p {
+  font-size: 10px;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+/* .percent p {
+  font-size: 8px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  text-align: center;
+  margin: 0 auto;
+} */
+.brand-name {
+  color: rgb(150, 147, 147);
+  font-size: 10px;
+  font-weight: 500;
+  margin: 10px;
+}
+.product-name {
+  margin-left: 10px;
+  margin-bottom: 15px;
+  padding: 10px 10px 10px 0px;
+  height: 50px;
+  width: 100%;
+}
+.product-name a {
+  /* cursor: pointer; */
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 13px;
+}
+.product-name a:hover {
+  color: rgb(189, 141, 53);
+}
+.product-price {
+  margin-left: 10px;
+  padding-bottom: 10px;
+}
+.btn-pay {
+  height: 45px;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  border-color: rgb(105, 105, 216);
+  margin: 0 auto 10px;
+  padding: 10px;
+  text-align: center;
+  color: rgb(105, 105, 216);
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-pay:hover {
+  border-color: transparent;
+  background-color: rgb(105, 105, 216);
+  color: #f4f4f4;
+}
+.men-polo-cloth {
+  max-width: 1460px;
+  margin: 0 auto;
+}
+.gear-for-male {
+  max-width: 1460px;
+  margin: 0 auto;
+}
+.product-price-old {
+  padding-right: 10px;
+  text-decoration: line-through;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(150, 147, 147);
+  padding: 10px 0px;
+}
+.product-price-old-men-polo {
+  padding-right: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(228, 26, 26);
+  padding: 10px 0px;
+}
+.product-price-new {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(228, 26, 26);
+  padding: 10px 0px;
+}
+.sale-cloth-section {
+  background-color: white;
+  width: calc(25% - 25px);
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: all 0.5s;
+  /* flex-wrap: wrap; */
+}
+.sale-cloth-section:hover {
+  border-style: outset;
+  border: 1px solid black;
+}
+.sale-cloth-area {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+footer {
+  max-width: 100%;
+}
+.promise {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.promise-list {
+  width: calc(70%-10px);
+  background: rgb(89, 89, 168);
+  display: flex;
+  padding: 10px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.promise-title {
+  font-size: 18px;
+  width: calc(20%-20px);
+  font-weight: 600;
+}
+.promise-content {
+  font-size: 18px;
+  width: calc(20%-20px);
+}
+.social {
+  width: 30%;
+  background: rgb(89, 89, 168);
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.social-img {
+  display: grid;
+  grid-template-columns: 30px 30px 30px 30px;
+  object-fit: cover;
+  overflow: hidden;
+  font-size: 20px;
+  gap: 10px;
+  align-items: center;
+  padding: 0 auto;
+}
+.social-follow {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+#email-promo {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+.btn-email-promo {
+  border-style: none;
+  width: auto;
+  height: auto;
+  background-color: rgb(105, 105, 216);
+  padding: 10px;
+  text-align: center;
+}
+/* CAROSEL */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin: auto; */
+  width: auto;
+  height: auto;
+}
+/* ----- end of container stylings ----- */
+/* provides padding to main heading */
+.main-heading {
+  padding: 2rem 0 2rem 0;
+}
+/* ----- end of container stylings ----- */
+.content {
+  position: relative;
+}
+
+/*----- end of carousel content stylings ----- */
+/* ----- slideshow stylings ----- */
+.slideshow {
+  height: 100%;
+  overflow: hidden; 
+  position: relative;
+}
+.slideshow-wrapper {
+  display: flex;
+  width: 400%;
+  height: 100%;
+  position: relative;
+  animation: slideshow 20s infinite;
+}
+.slide {
+  width: 100%;
+  height: 100%;
+}
+.slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@keyframes slideshow {
+  0% {
+    left: 0;
+  }
+  /* 10% {
+    left: 0;
+  } */
+  15% {
+    left: -100%;
+  }
+  /* 25% {
+    left: -100%;
+  } */
+  30% {
+    left: -200%;
+  }
+  /* 40% {
+    left: -200%;
+  } */
+  45% {
+    left: -300%;
+  }
+  /* 55% {
+    left: -300%;
+  } */
+  60% {
+    left: -200%;
+  }
+  /* 70% {
+    left: -200%;
+  } */
+  75% {
+    left: -100%;
+  }
+  /* 85% {
+    left: -100%;
+  } */
+  90% {
+    left: 0%;
+  }
+}
+/* ----- end of slideshow stylings ----- */
+.slide-btn {
+  background-color: #bbb;
+  border-radius: 50%;
+  border: 0.2rem solid #d38800;
+  width: 1.2rem;
+  height: 1.2rem;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 70;
+}
+.slide-btn-1 {
+  left: 45%;
+}
+.slide-btn-2 {
+  left: 50%;
+}
+.slide-btn-3 {
+  left: 55%;
+}
+.slide-btn-4 {
+  left: 60%;
+}
+.slide-btn-1:focus ~ .slideshow-wrapper {
+  animation: none;
+  left: 0;
+}
+.slide-btn-2:focus ~ .slideshow-wrapper {
+  animation: none;
+  left: -100%;
+}
+.slide-btn-3:focus ~ .slideshow-wrapper {
+  animation: none;
+  left: -200%;
+}
+.slide-btn-4:focus ~ .slideshow-wrapper {
+  animation: none;
+  left: -300%;
+}
+.slide-btn:focus {
+  background-color: rgb(105, 105, 216);
+}
+/* EMD CAROSEL */
+.sport-news {
+  /* display: flex; */
+  position: relative;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  max-width: 1460px;
+  margin: 0 auto;
+}
+.sport-news h2 {
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+  animation: glow 1.5s infinite;
+  margin: 30px 0;
+  font-family: "Noto Sans", sans-serif;
+}
+.sport-news-list {
+  display: flex;
+  list-style: none;
+  height: auto;
+  width: 100%;
+  gap: 50px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  position: relative;
+  /* align-items: center; */
+  margin: 30px 0;
+}
+.btn-news-slide-forward {
+  position: absolute;
+  font-size: 30px;
+  color: #f4f4f4;
+  z-index: 20;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  outline: none;
+  border: none;
+  background: none;
+  animation: next 0.3s ease-in-out;
+}
+.btn-news-slide-backward {
+  position: absolute;
+  font-size: 30px;
+  color: #f4f4f4;
+  z-index: 20;
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+  outline: none;
+  border: none;
+  background: none;
+  animation: next 0.3s ease-in-out;
+}
+
+.sport-news-item {
+  scroll-snap-align: start;
+}
+
+.sport-news-list .sport-news-item img {
+  /* display: inline-block; */
+  margin-bottom: 10px;
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  overflow: hidden;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+.sport-news-list .sport-news-item img:hover {
+  opacity: 0.5;
+}
+.sport-news-list .sport-news-item a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.sport-news-list .sport-news-item a:hover {
+  color: #d38800;
+}
+.row {
+  max-width: 1460px;
+  margin: 0 auto;
+  display: flex;
+  gap: 50px;
+}
+.column {
+  font-family: "Noto Sans", sans-serif;
+  width: calc(25% - 50px);
+}
+@media only screen and (max-width: 1100px) {
+  .navlist {
+    gap: 20px;
+  }
+  .sale-cloth-section {
+    width: calc(330px - 25px);
+  }
+  .row {
+    display: inline-block;
+  }
+  .column {
+    width: auto;
+    border-bottom: 1px solid black;
+  }
+  .promise-list {
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .promise-title {
+    /* font-size: 18px; */
+    width: auto;
+    font-weight: 600;
+  }
+  .promise-content {
+    /* font-size: 18px; */
+    width: auto;
+  }
+  .promise {
+    display: block;
+  }
+  .social {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .sale-cloth-area {
+    gap: 10px;
+  }
+  .sale-cloth-section {
+    width: calc(250px - 10px);
+  }
+  .navlist {
+    display: none;
+  }
+  #mobile-nav {
+    display: block;
+    background: rgb(105, 105, 216);
+  }
+  .navlist-1 {
+    display: flex;
+  }
+  .slide-btn {
+    width: 1rem;
+    height: 1rem;
+
+  }
+  .policylist {
+display: none;
+}
+}
+@media only screen and (max-width: 550px) {
+  .sale-cloth-section {
+    width: 130px;
+    flex-wrap: nowrap;
+  }
+  /* .sale-cloth-area {
+    width: 400px;
+  } */
+  .slide-btn {
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 0.1rem solid #d38800;
+  }
+  .promise-title {
+    font-size: 7px;
+    /* width: calc(20%-20px); */
+  }
+  .promise-content {
+    font-size: 7px;
+    /* width: calc(20%-20px); */
+  }
+  .promise-list {
+    /* width: auto; */
+    gap:5px
+  }
+  .sale-part1{
+    font-size: 10px;
+  }
+  .product-name a{
+    font-size: 7px;
+  }
+  .brand-name{
+    margin: 5px 10px;
+  }
+  .product-name {
+    margin-left: 10px;
+    margin-bottom: 7px;
+    padding: 5px 10px 10px 0px;
+    height: 50px;
+    width: 100%;
+}
+.product-price-old-men-polo {
+  font-size: 10px;
+  padding: 10px 0px;
+}
+.btn-pay {
+  height: 30px;
+  border-radius: 30px;
+  margin: 0px auto 10px;
+  padding: 1px;
+  font-weight: 500;
+  font-size: 15px;
+}
+}

@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    color: chocolate;
+    text-align: center;
+    background-color: beige;
+}
+
+.header-border {
+    border-width: 5px;
+    border-radius: 10px;
+    background-color: beige;
+    padding: 40px;
+    margin: 40px 0;
+}
+
+.header-text {
+    color: rgb(163, 106, 41);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: cadetblue;
+}
+.text-wrapper {
+    margin-bottom: 40px;
+    border: 5px;
+    border-width: 5px;
+    border-radius: 20px;
+    background-color: beige;
+    padding: 40px;
+    box-shadow: 10px 10px 10px rgb(226, 226, 146);
+
+}
+
+
+
+#Interest {
+    color: rgb(163, 106, 41);
+}
+
+#Skills {
+    color: rgb(163, 106, 41);
+}
+
+#Education {
+    color: rgb(163, 106, 41);
+}
+
+#Experience {
+    color: rgb(163, 106, 41);
+}
+
+#Extracurricular {
+    color: rgb(163, 106, 41);
+}
+
+.dotted li {
+    color: darkcyan;
+    list-style: none;
+}
+
+.dotted a {
+    color: darkcyan;
+}
+
+.dotted a:hover {
+    color: rgb(84, 176, 176);
+}
+
+/* .topnav-pos{
+    position: sticky;
+    top: 0px;
+} */
+.topnav {
+    height: 60px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 40px;
+    gap: 100px;
+    border: 4px solid darkgreen;
+    background-color: paleturquoise;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.topnav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(39, 97, 92);
+}
+
+.topnav a:hover {
+    background-color: rgb(70, 202, 238);
+}
+.circle {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-color: black;
+    overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 20px 20px darkcyan;
+    margin-bottom: 40px;
+}
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.footer a:hover {
+    background-color: bisque;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.contact-infor {
+    text-align: center;
+    color: rgb(15, 40, 87);
+    border-style: dashed;
+    border-width: 2px;
+    padding: 10px;
+}
+
+#icon {
+    color: cornsilk;
+    font-size: 30px;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 6px;
+    bottom: 7px;
+    background-color: transparent;
+    font-size: 15px;
+    scroll-behavior: smooth;
+    cursor: pointer;
+}
+
+.back-to-top a:hover {
+    font-size: 20px;
+}

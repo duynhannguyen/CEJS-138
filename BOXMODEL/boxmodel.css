@@ -1,0 +1,20 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    border-radius: 12px;
+    padding: 5px;
+    border: 5px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box:nth-child(2){background-color: aquamarine;
+margin-top: 20px;
+margin-bottom: 20px;
+margin: 0 auto;
+margin-inline: auto;
+margin-block: 40px;
+
+}

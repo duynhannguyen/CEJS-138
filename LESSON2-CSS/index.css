@@ -1,0 +1,28 @@
+p {
+    text-align: center;
+    letter-spacing: 2px;
+    color: blueviolet;
+    font: 18px;
+    border-color: black;
+    border-width: 3px;
+    border-style: dashed;
+}
+
+.player h4:nth-child(2) {border-style: dashed;
+    color: burlywood;
+    background-color: darkblue;
+}
+
+#m10 {
+    font-size: 30;
+    font-weight: bold;
+    background-color: blueviolet;
+    border-radius: 5cm;
+}
+
+#cr7 {
+    font-size: 30;
+    font-weight: bold;
+    background-color: cyan;
+    border-radius: 5cm;
+}

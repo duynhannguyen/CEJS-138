@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super sports</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,700;1,800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <section>
+      <header id="header">
+        <div class="logo">
+          <img
+            class="logo-img"
+            src="https://statics.vincom.com.vn/http/vincom-ho/thuong_hieu/anh_logo/Supersports.png/1dffc36eab2e7e0aa9f2603a874646e5.webp"
+            alt=""
+          />
+        </div>
+        <nav class="nav-bar">
+          <ul class="navlist">
+            <li class="navitem"><a href="#men-polo-cloth"> NAM </a></li>
+            <li class="navitem"><a href="#gear-for-female"> NỮ </a></li>
+            <li class="navitem"><a href="#sport"> TIN TỨC </a></li>
+          </ul>
+        </nav>
+         <span class="promo"> ƯU ĐÃI </span>
+        <div class="cart">
+          <ion-icon name="cart-outline"></ion-icon>
+          <div class="cart-drop-down" id="parent">
+            <div class="cart-title"><h2>Giỏ hàng</h2></div>
+            <div class="cart-content" id="deleted-child">
+              <!-- <div  class="cart-content-container">
+              <div class="cart-img">
+                <img src="https://cdn.shopify.com/s/files/1/0456/5070/6581/files/1377366-100-1_1080x.jpg?v=1683197576" alt="Áo Polo UNDER ARMOUR">
+              </div>
+              <div class="cart-detail">
+                <div class="cart-brand">UNDER ARMOUR
+                </div>
+                <div class="cart-name">Áo Polo Nam Under Armour Isochill</div>
+                <div class="cart-price">2.395.000đ</div>
+                <div class="cart-quantity">
+                <label for="quantity"></label>
+                <input type="number" class="cart-quantity" value="2" >
+                <div class="btn-remove">REMOVE</div>
+              </div>
+              </div>
+            </div> -->
+            </div>
+            <hr />
+            <div class="total">
+              Total
+              <div class="totalNumber"></div>
+            </div>
+            <div class="purchase" onclick="purchase()">Thanh Toán</div>
+          </div>
+        </div>
+      </header>
+      <nav id="mobile-nav" class="nav-bar-1">
+        <ul class="navlist-1">
+          <li class="navitem"><a href="#men-polo-cloth"> NAM </a></li>
+          <li class="navitem"><a href="#gear-for-female"> NỮ </a></li>
+          <li class="navitem"><a href="#sport"> TIN TỨC </a></li>
+        </ul>
+      </nav>
+      <div class="policy">
+        <ul class="policylist">
+          <li class="policyitem">
+            <a href="#freeship"> MIỄN PHÍ GIAO HÀNG TỪ 699K </a>
+          </li>
+          <li class="policyitem">
+            <a href="#goods-return"> 15 NGÀY ĐỔI TRẢ DỄ DÀNG </a>
+          </li>
+          <li class="policyitem payment">
+            <a href="#payment"> MUA HÀNG HIỆU TRẢ GÓP 0% </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- end header -->
+    <div class="container">
+      <div class="content">
+        <!-- The content which is placed at the center of the carousel -->
+        <div class="carousel-content">
+        </div>
+        <div class="slideshow">
+          <!-- carousel control buttons -->
+          <button class="slide-btn slide-btn-1"></button>
+          <button class="slide-btn slide-btn-2"></button>
+          <button class="slide-btn slide-btn-3"></button>
+          <button class="slide-btn slide-btn-4"></button>
+          <!-- carousel wrapper which contains all images -->
+          <div class="slideshow-wrapper">
+            <div class="slide">
+              <img
+                class="slide-img"
+                src="https://cdn.shopify.com/s/files/1/0456/5070/6581/files/1545_x_500_V_65c432e3-8e4c-4ee8-be8d-e270b520079d_2048x.jpg?v=1684832227"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="slide-img"
+                src="https://cdn.shopify.com/s/files/1/0456/5070/6581/files/1545_500V_2048x.jpg?v=1685011385"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="slide-img"
+                src="https://cdn.shopify.com/s/files/1/0456/5070/6581/files/1545_500_V_2048x.jpg?v=1685011488"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="slide-img"
+                src="https://cdn.shopify.com/s/files/1/0456/5070/6581/files/1545x500_VN-min_e82230d6-cf8c-4c6f-8194-816e9e917df4_2048x.jpg?v=1684231636"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section men polo -->
+    <div id="men-polo-cloth">
+      <div class="sale-header">
+        <h2>Áo Polo Dành Cho Nam</h2>
+      </div>
+
+      <div class="sale-cloth-area">
+        <!-- <div class="sale-cloth-section">
+          <div class="sale-cloth-list">
+            <div class="product-img">
+              <div class="front-img">
+              <img src="https://cdn.shopify.com/s/files/1/0456/5070/6581/products/HQ6351-1_110x110@2x.jpg?v=1677470404" alt="quan" />
+            </div>
+            <div class="back-img">
+              <img src="https://cdn.shopify.com/s/files/1/0456/5070/6581/products/HQ6351-2_110x110@2x.jpg?v=1677470405" alt="quan1">
+            </div>
+            </div>
+
+            <div class="percent"><p>-20%</p></div>
+            <div class="sale-part1"> <p> VOUCHER 20% </p> </div>
+          </div>
+          <div class="brand-name">ADIDAS</div>
+          <div class="product-name"> <a href="#"> Giày Thể Thao Nam Adidas Ultraboost Light </a> </div>
+          <div class="product-price">5.200.000đ
+            <span class="product-price-new"> 5.200.000đ </span>
+          <span class = "product-price-old"> 4.200.000đđ </span>
+          </div>
+          <div class="btn-pay">MUA NGAY</div>
+        </div> -->
+      </div>
+    </div>
+    <!-- end section men polo -->
+    <!-- GEAR FOR FEMALE -->
+    <div id="gear-for-female">
+      <div class="sale-header">
+        <h2>ĐỒ TẬP NỮ</h2>
+      </div>
+
+      <div class="sale-cloth-area">
+        <!-- <div class="sale-cloth-section">
+          <div class="sale-cloth-list">
+            <div class="product-img">
+              <div class="front-img">
+              <img src="https://cdn.shopify.com/s/files/1/0456/5070/6581/products/HQ6351-1_110x110@2x.jpg?v=1677470404" alt="quan" />
+            </div>
+            <div class="back-img">
+              <img src="https://cdn.shopify.com/s/files/1/0456/5070/6581/products/HQ6351-2_110x110@2x.jpg?v=1677470405" alt="quan1">
+            </div>
+            </div>
+
+            <div class="percent"><p>-20%</p></div>
+            <div class="sale-part1"> <p> VOUCHER 20% </p> </div>
+          </div>
+          <div class="brand-name">ADIDAS</div>
+          <div class="product-name"> <a href="#"> Giày Thể Thao Nam Adidas Ultraboost Light </a> </div>
+          <div class="product-price">5.200.000đ
+            <span class="product-price-new"> 5.200.000đ </span>
+          <span class = "product-price-old"> 4.200.000đđ </span>
+          </div>
+          <div class="btn-pay">MUA NGAY</div>
+        </div> -->
+      </div>
+    </div>
+    <!-- END GEAR FOR FEMALE -->
+    <!-- section sales cloth -->
+    <div id="sale-cloth">
+      <div class="sale-header">
+        <h2>SẢN PHẨM SALE OFF 20%</h2>
+      </div>
+      <div class="sale-cloth-area">
+        <!-- <div class="sale-cloth-section">
+          <div class="sale-cloth-list">
+            <div class="product-img">
+              <div class="front-img">
+              <img src="https://cdn.shopify.com/s/files/1/0456/5070/6581/products/HQ6351-1_110x110@2x.jpg?v=1677470404" alt="quan" />
+            </div>
+            <div class="back-img">
+              <img src="https://cdn.shopify.com/s/files/1/0456/5070/6581/products/HQ6351-2_110x110@2x.jpg?v=1677470405" alt="quan1">
+            </div>
+            </div>
+
+            <div class="percent"><p>-20%</p></div>
+            <div class="sale-part1"> <p> VOUCHER 20% </p> </div>
+          </div>
+          <div class="brand-name">ADIDAS</div>
+          <div class="product-name"> <a href="#"> Giày Thể Thao Nam Adidas Ultraboost Light </a> </div>
+          <div class="product-price">5.200.000đ
+            <span class="product-price-new"> 5.200.000đ </span>
+          <span class = "product-price-old"> 4.200.000đđ </span>
+          </div>
+          <div class="btn-pay">MUA NGAY</div>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- end section sales cloth  -->
+
+    <!-- SPORT NEWS SECTION -->
+    <div id="sport" class="sport-news">
+      <h2>TIN TỨC THỂ THAO</h2>
+      <!-- <button class="btn-news-slide-backward">
+        <ion-icon name="arrow-back"></ion-icon>
+    </button>
+      <button class="btn-news-slide-forward">
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button> -->
+
+      <ul class="sport-news-list">
+        <!-- <li class="sport-news-item">
+          <img src="https://snkrvn.sgp1.digitaloceanspaces.com/wp-content/uploads/2023/05/kanye-yeezy-adidas-partnership-960x640.jpg" href="https://snkrvn.com/adidas-sap-cong-bo-mo-ban-yeezy-tro-lai/">
+          <a href="https://snkrvn.com/adidas-sap-cong-bo-mo-ban-yeezy-tro-lai/" target="_blank"> Adidas Sắp Công Bố Mở Bán Yeezy Trở Lại </a>
+        </li> -->
+      </ul>
+    </div>
+    <!-- END SPORT NEWS SECTION -->
+    <!-- section footer -->
+    <footer>
+      <div class="promise">
+        <div class="promise-list">
+          <span class="promise-title"> Cam Kết Của Chúng Tôi</span>
+          <div class="promise-content">Bảo Hành Tối Thiểu 2 Năm</div>
+          <div class="promise-content">Miễn Phí Giao Hàng từ 699K</div>
+          <div class="promise-content">Trả Hàng Trong 15 Ngày</div>
+          <div class="promise-content">Mua Hàng Hiệu Trả Góp 0%</div>
+        </div>
+        <div class="social">
+          <div class="social-follow">
+            <span>FOLLOW US</span>
+            <div class="social-img">
+              <ion-icon name="logo-facebook"></ion-icon>
+              <ion-icon name="logo-instagram"></ion-icon>
+              <ion-icon name="logo-youtube"></ion-icon>
+              <ion-icon name="logo-tiktok"></ion-icon>
+            </div>
+          </div>
+          <div class="email-promo">
+            <label for="email-promo"></label>
+            <input
+              type="email"
+              id="email-promo"
+              placeholder="Nhập email của bạn để nhận khuyến mãi mới nhất"
+            />
+            <button onclick="submitEmail()" class="btn-email-promo">
+              Đăng ký
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="row">
+      <div class="column">
+        <h1>CÔNG TY TNHH MTV THƯƠNG MẠI THỜI TRANG TỔNG HỢP (GTF)</h1>
+        <p>
+          Văn phòng: Số 163, Phan Đăng Lưu, Phường 01, Phú Nhuận, Hồ Chí Minh,
+          Việt Nam
+        </p>
+        <p>
+          Địa chỉ kho: 14 Đường Phan Đăng Lưu, Khu phố 7, Phường Long Bình, TP.
+          Biên Hòa, Tỉnh ĐồngNai
+        </p>
+        <p>Tổng đài: 1900 63 64 01</p>
+        <p>
+          Mã số Doanh Nghiệp: 0314635071, đăng ký thay đổi ngày 20 tháng 04 năm
+          2020
+        </p>
+      </div>
+      <div class="column">
+        <h1>Về SUPERSPORTS</h1>
+        <p>Giới thiệu</p>
+        <p>Hệ thống cửa hàng</p>
+        <p>Sơ đồ web</p>
+        <p>Thông tin liên hệ</p>
+      </div>
+      <div class="column">
+        <h1>Hỗ trợ khách hàng</h1>
+        <p>Chính sách giao hàng</p>
+        <p>Hướng dẫn chọn size</p>
+        <p>Chính sách đổi trả hàng</p>
+        <p>Hỗ trợ và giải đáp thắc mắc</p>
+        <p>Chính sách trả góp</p>
+        <p>Các điều khoản và điều kiện</p>
+        <p>Chính sách bảo mật</p>
+        <p>Hướng dẫn mua hàng</p>
+      </div>
+      <div class="column">
+        <h1>Group Business</h1>
+        <p>Nguyễn Kim</p>
+        <p>Big C</p>
+        <p>Crocs Vietnam</p>
+      </div>
+    </div>
+    <!-- end section footer -->
+    <script src="./index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5a21dd5336.js"
+      crossorigin="anonymous"
+      type="module"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

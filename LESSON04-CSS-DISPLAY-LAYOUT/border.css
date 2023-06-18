@@ -1,0 +1,39 @@
+.box{
+    height: 500px;
+    width: 300px;
+    background-color: white;
+    
+}
+/* .box{
+     border: 10px solid;
+     border-image-slice: 1;
+     border-image-source: linear-gradient(to right  bottom,#ffa400, #ff6bcd);
+     border-radius: 20px;
+} */
+/* inner div */
+/* .box{
+    background-image:  linear-gradient(to right  bottom,#ffa400, #ff6bcd);
+    padding: 10px;
+}
+.box-chid{
+width: 100%;
+height: 100%;
+background-color: black;
+} */
+/* peseudo */
+.box{
+    position: relative;
+    background-clip: padding-box;
+    border: 10px solid transparent;
+border-radius: 20px;
+background-color: black;
+}
+.box::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    /* margin: -10px; */
+    border-radius: inherit;
+    background-image:  linear-gradient(to right  bottom,#ffa400, #ff6bcd);
+}
